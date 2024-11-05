@@ -1,0 +1,166 @@
+@media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+  
+    input[type="text"], textarea {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    .carousel-images img {
+    width: 100%;
+    height: auto;
+    }
+}
+
+.form-container {
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkcyan;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 0 5px;
+    text-align: center;
+    flex: none;
+    margin: 5px;
+    white-space: nowrap;    
+}
+
+nav a:hover {
+    color:darkred;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div, form {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+    
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.promotions {
+    padding: 40px 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.popular-items {
+    text-align: center;
+    margin: 20px auto;
+}
+  
+.item-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.item {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+}
+  
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: black;
+    color: cyan;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+label{
+    font-size: 1.2em
+}
+
+label{
+    font-weight: bold;
+}
