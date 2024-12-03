@@ -1,29 +1,40 @@
 @media (max-width: 600px) {
     .form-container {
-      width: 90%;
-      margin: auto;
-      padding: 20px;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        max-width: 600px;
     }
-  
-    input[type="text"], textarea {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    button {
-      width: 100%;
-      font-size: 18px;
-    }
-    
-    .carousel-images img {
-    width: 100%;
-    height: auto;
-    }
-}
 
-.form-container {
-    max-width: 600px; 
-    margin: 0 auto;
+    input[type="text"],
+    textarea {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        background-color: black;
+        color: cyan;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .review {
+        margin-bottom: 2px; 
+        padding: 2px
+    }
+    .review:nth-child(n+7) {
+        display: none;
+    }
 }
 
 body {
@@ -32,6 +43,7 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+    font-size: medium;
 }
 
 nav {
@@ -45,85 +57,78 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 10px 10px;
+    font-size: 12.5px;
     margin: 0 5px;
     text-align: center;
     flex: none;
     margin: 5px;
-    white-space: nowrap;    
+    white-space: nowrap;
 }
 
 nav a:hover {
-    color:darkred;
+    color: darkred;
 }
 
 h1, h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 div, form {
     width: 80%;
-    margin: 20px auto;
-    background: white;
+    margin: 10px auto;
+    background: darkgoldenrod;
     padding: 20px;
-    border-radius: 8px;
 }
 
 .carousel {
-    max-width: 100%;
+    width: 100%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 .carousel-images {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 4%;
+    align-items: center;
+    margin: 0 auto; 
 }
 
 .carousel-images img {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
-    
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
 
 .promotions {
-    padding: 40px 20px;
-    margin: 20px auto;
+    padding: 2%;
+    margin: 2% auto;
     text-align: center;
 }
 
 .popular-items {
     text-align: center;
-    margin: 20px auto;
+    margin: 2% auto;
+    padding: 2%;
 }
-  
+
 .item-container {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 0 auto; 
 }
-  
+
 .item {
-    background-color: #fff;
+    background-color: white;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid grey;
     border-radius: 5px;
     width: 150px;
 }
-  
+
 .item img {
     width: 100%;
     height: auto;
@@ -145,22 +150,42 @@ form {
     gap: 10px;
 }
 
+.rating {
+    font-size: 24px;
+    color: white;
+}
+
+.rating .star {
+    cursor: pointer;
+}
+
+.rating .star.selected {
+    color: gold;
+}
+
+.service-items {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.service-items img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.service-text {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px;
+}
+
 button {
+    width: 100%;
+    font-size: 18px;
     background-color: black;
     color: cyan;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: darkred;
-}
-
-label{
-    font-size: 1.2em
-}
-
-label{
-    font-weight: bold;
 }

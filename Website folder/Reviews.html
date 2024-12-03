@@ -16,7 +16,29 @@
     </nav>
     <div class="reviews">
         <h2>Customer Reviews</h2>
-        <!-- Placeholder for reviews -->
+        <script>
+             const reviews = [
+                { name: "John Wick", rating: 5, text: "Amazing service, my dog loved it! Highly recommend." },
+                { name: "Jane Foster", rating: 4, text: "Great grooming service, with friendly staff." },
+                { name: "Nick Cage", rating: 5, text: "Perfect place for my cat to relax along with me." },
+                { name: "Alex Peralta", rating: 3, text: "Great place, but is constantly crowded." },
+                { name: "Anne Hathaway", rating: 3, text: "Prices are a bit more expensive compared to pet stores." }
+            ];
+    
+            const reviewsContainer = document.querySelector('.reviews');
+    
+            reviews.forEach(review => {
+                const reviewElement = document.createElement('div');
+                reviewElement.classList.add('review');
+                
+                const reviewText = `<h3>${review.name}</h3>
+                                    <p>Rating: ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</p>
+                                    <p>${review.text}</p>`;
+    
+                reviewElement.innerHTML = reviewText;
+                reviewsContainer.appendChild(reviewElement);
+            });
+        </script>
     </div>
 </body>
 </html>
